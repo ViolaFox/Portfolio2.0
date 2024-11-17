@@ -1,0 +1,145 @@
+.header__photo {
+  width: 100%;
+  height: 765px;
+  background-image: url("../resources/girl.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  position: relative;
+}
+
+.nav-inner {
+  padding-top: 36px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-link {
+  margin-left: -4px;
+  padding-left: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 130px;
+  height: 39px;
+  border-radius: 100px;
+  background: rgb(0, 0, 0);
+  letter-spacing: -0.11em;
+  font-size: 42.41px;
+  font-weight: 700;
+  line-height: 39px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgb(120, 90, 255);
+  cursor: pointer;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 503px;
+}
+
+.nav__link {
+  font-size: 18px;
+  line-height: 0px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.nav__link:hover {
+  color: rgb(120, 90, 255);
+}
+
+.burger-btn {
+  display: none;
+}
+
+.photo__text {
+  margin-left: -1px;
+  margin-top: 260px;
+  margin-bottom: 27px;
+  font-size: 20px;
+  line-height: 26px;
+
+  color: rgb(255, 255, 255);
+  width: 430px;
+}
+
+.photo__title {
+  margin-left: -7px;
+  width: 960px;
+}
+
+@media (max-width: 1199px) {
+  .nav-inner {
+    padding-top: 32px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .burger-btn {
+    position: absolute;
+    right: -18px;
+    top: 19px;
+    z-index: 15;
+    display: block;
+    width: 36.01px;
+    height: 24px;
+    background-image: url(../resources/burger.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    margin: 20px;
+  }
+
+  .burger-btn_open {
+    top: -2px;
+    right: -3px;
+    background-image: url(../resources/cross.png);
+    color: rgb(120, 90, 255);
+    width: 20.18px;
+    height: 20.18px;
+  }
+
+  .photo__text {
+    margin-top: 297px;
+    margin-bottom: 30px;
+  }
+
+  .photo__title {
+    margin-left: -5px;
+    width: 752px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header__photo {
+    height: 716px;
+  }
+
+  .logo-link {
+    margin-left: 0;
+  }
+
+  .photo__text {
+    margin-top: 267px;
+    margin-bottom: 14px;
+    width: 291px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .photo__title {
+    margin-left: -3px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 325px) {
+  .photo__text {
+    width: 100%;
+  }
+}

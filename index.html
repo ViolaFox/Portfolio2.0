@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="icon" href="resources/V-icon.png" type="image/png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/projects.css" />
+    <link rel="stylesheet" href="styles/competence.css" />
+    <link rel="stylesheet" href="styles/services.css" />
+    <link rel="stylesheet" href="styles/contacts.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/burger.css" />
+  </head>
+  <body>
+    <header>
+      <section class="section-header">
+        <div class="header__photo">
+          <div class="container">
+            <div class="nav-inner">
+              <a class="logo-link" href="/">Viola</a>
+              <ul class="nav">
+                <li>
+                  <a class="nav__link" href="#projects">портфолио</a>
+                </li>
+                <li>
+                  <a class="nav__link" href="#competence">компетенции</a>
+                </li>
+                <li>
+                  <a class="nav__link" href="#services">услуги</a>
+                </li>
+                <li>
+                  <a class="nav__link" href="#contacts">контакты</a>
+                </li>
+              </ul>
+              <div class="burger-btn js-burger-btn"></div>
+            </div>
+            <p class="photo__text">
+              Разрабатываю имиджевые сайты для малого и среднего бизнеса,
+              которые повышают престиж компании и позволяют выделиться на фоне
+              конкурентов
+            </p>
+            <h1 class="photo__title">
+              Привет, я Виолетта — фронтенд разарботчик и дизайнер сайтов
+            </h1>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <div class="burger js-burger">
+      <div class="burger__content">
+        <a class="burger__logo-link" href="/">Viola</a>
+        <ul class="burger__nav">
+          <li>
+            <a class="burger__nav__link" href="#projects">портфолио</a>
+          </li>
+          <li>
+            <a class="burger__nav__link" href="#competence">компетенции</a>
+          </li>
+          <li>
+            <a class="burger__nav__link" href="#services">услуги</a>
+          </li>
+          <li>
+            <a class="burger__nav__link" href="#contacts">контакты</a>
+          </li>
+        </ul>
+        <h2 class="burger__contacts-title">для связи:</h2>
+        <ul class="burger__contacts-list">
+          <li>
+            <a
+              class="burger__contacts"
+              target="_blank"
+              href="https://t.me/ViolaFox3"
+              >telegram</a
+            >
+          </li>
+          <li>
+            <a
+              class="burger__contacts"
+              target="_blank"
+              href="mailto:violafox363@gmail.com"
+              >mail</a
+            >
+          </li>
+          <li>
+            <a
+              class="burger__contacts"
+              target="_blank"
+              href="https://www.instagram.com/violafox_x3/"
+              >instagram</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <main>
+      <section id="projects" class="section-projects">
+        <div class="container">
+          <h2 class="projects__title">Самые свежие проекты</h2>
+          <ul class="projects__list">
+            <li class="projects">
+              <a
+                class="projects__img"
+                href="https://violafox.github.io/Metrika.4/"
+                target="_blank"
+                style="background-image: url('resources/Metrika.png')"
+              >
+                <p class="projects__flying-text">дизайн интерьера</p>
+                <h3 class="projects__name">Метрика</h3>
+                <p class="projects__text">верстка, настройка</p></a
+              >
+            </li>
+            <li class="projects">
+              <a
+                class="projects__img"
+                href="/"
+                target="_blank"
+                style="background-image: url('resources/Nothing.png')"
+              >
+                <p class="projects__flying-text">презентация продукта</p>
+                <h3 class="projects__name">Nothing</h3>
+                <p class="projects__text">верстка, настройка</p></a
+              >
+            </li>
+            <li class="projects">
+              <a
+                class="projects__img"
+                href="/"
+                target="_blank"
+                style="background-image: url('resources/Toptrip.png')"
+              >
+                <p class="projects__flying-text">заказ путешествий</p>
+                <h3 class="projects__name">TOPTRIP</h3>
+                <p class="projects__text">верстка</p></a
+              >
+            </li>
+          </ul>
+          <a class="projects__link" href="/">Смотреть все проекты</a>
+        </div>
+      </section>
+      <section id="competence" class="section-competence">
+        <div class="container">
+          <h2 class="competence__title">Мои компетенции</h2>
+          <ul class="competence__list">
+            <li class="competence">
+              <img class="competence__img" src="resources/html.png" alt="" />
+              <h3 class="competence__name">HTML и CSS</h3>
+              <p class="competence__text">
+                это основа фронтенд разработки. Умение создавать и правильно
+                структурировать HTML-документы, а также применять стили к этим
+                документам на CSS, является обязательным навыком для каждого
+                фронтенд разработчика.
+              </p>
+            </li>
+            <li class="competence">
+              <img class="competence__img" src="resources/js.png" alt="" />
+              <h3 class="competence__name">JavaScript</h3>
+              <p class="competence__text">
+                это язык программирования, который используется для создания
+                динамического и интерактивного пользовательского интерфейса.
+                Хороший фронтенд разработчик должен быть знаком с основами
+                JavaScript, включая работу с DOM-деревом, асинхронными запросами
+                и манипуляцией данными на стороне клиента.
+              </p>
+            </li>
+            <li class="competence">
+              <img class="competence__img" src="resources/phone.png" alt="" />
+              <h3 class="competence__name">
+                Работа с библиотеками и фреймворками
+              </h3>
+              <p class="competence__text">
+                фронтенд разработчики должны быть знакомы с различными
+                библиотеками и фреймворками, такими как React, Angular, Vue и
+                другими. Умение использовать готовые решения, адаптировать их
+                под нужды проекта и расширять их функциональность, является
+                очень важным навыком.
+              </p>
+            </li>
+            <li class="competence">
+              <img
+                class="competence__img"
+                src="resources/adaptive.png"
+                alt=""
+              />
+              <h3 class="competence__name">
+                Разработка для мобильных устройств и адаптивная верстка
+              </h3>
+              <p class="competence__text">
+                фронтенд разработчики должны быть знакомы с различными
+                библиотеками и фреймворками, такими как React, Angular, Vue и
+                другими. Умение использовать готовые решения, адаптировать их
+                под нужды проекта и расширять их функциональность, является
+                очень важным навыком.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="services" class="section-services">
+        <div class="container">
+          <h2 class="services__title">
+            Помогаю реализовать широкий спектр задач
+          </h2>
+          <ul class="services__list">
+            <li class="services">
+              <picture>
+                <source
+                  media="(max-width: 500px)"
+                  srcset="resources/Rectangle-15_mobile.png"
+                />
+                <img
+                  class="services__img"
+                  src="resources/Rectangle 15.png"
+                  alt=""
+                />
+              </picture>
+              <div class="services__back">
+                <div class="services__content">
+                  <h3 class="services__name">Разработка сайта под ключ</h3>
+                  <p class="services__text">
+                    Это создание дизайн веб-сайтов, созданный для удобства
+                    пользователя и решения бизнес-задач<br />
+                    Сайты должны быть понятными и удобными, ведь чем понятнее
+                    сайт, тем быстрее пользователь совершит целевое действие
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="services">
+              <picture>
+                <source
+                  media="(max-width: 500px)"
+                  srcset="resources/Rectangle-18_mobile.png"
+                />
+                <img
+                  class="services__img"
+                  src="resources/Rectangle 18.png"
+                  alt=""
+                />
+              </picture>
+              <div class="services__back">
+                <div class="services__content">
+                  <h3 class="services__name">Верстка сайтов</h3>
+                  <p class="services__text">
+                    Это процесс создания HTML-документов и применения к ним
+                    стилей на CSS. Фронтенд разработчик может помочь создать
+                    привлекательный и удобный интерфейс для вашего сайта
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="services">
+              <picture>
+                <source
+                  media="(max-width: 500px)"
+                  srcset="resources/Rectangle-20_mobile.png"
+                />
+                <img
+                  class="services__img"
+                  src="resources/Rectangle 20.png"
+                  alt=""
+                />
+              </picture>
+              <div class="services__back">
+                <div class="services__content">
+                  <h3 class="services__name">
+                    Разработка мобильного интерфейса
+                  </h3>
+                  <p class="services__text">
+                    Это процесс создания интерактивных элементов на странице с
+                    помощью JavaScript. Фронтенд разработчик может помочь
+                    создать динамический и удобный пользовательский интерфейс
+                    для вашего сайта или приложения.
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="contacts" class="section-contacts">
+        <div class="container">
+          <img class="contacts__img" src="resources/girlSitting.png" alt="" />
+          <h2 class="contacts__title">
+            Для связи со мной заполните простую форму
+          </h2>
+          <form class="order__form">
+            <input
+              class="contacts__input"
+              type="text"
+              name="name"
+              placeholder="Имя Фамилия"
+            />
+            <input
+              class="contacts__input"
+              type="email"
+              name="email"
+              placeholder="example@mail.com"
+            />
+          </form>
+          <button class="contacts__btn">Отправить</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section class="section-footer">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="footer__col">
+              <p class="footer__name">
+                Портфолио фротнтенд-разработчика Виолетты
+              </p>
+              <ul class="footer__contacts-list">
+                <li>
+                  <a
+                    class="footer__contacts"
+                    target="_blank"
+                    href="mailto:violafox363@gmail.com"
+                    >mail</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="footer__contacts"
+                    target="_blank"
+                    href="https://t.me/ViolaFox3"
+                    >telegram</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="footer__contacts"
+                    target="_blank"
+                    href="https://www.instagram.com/violafox_x3/"
+                    >instagram</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer__col">
+              <p class="footer__text">Все права защищены. 2024</p>
+              <p class="footer__text">политика обработки данных</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <script src="script/burger.js"></script>
+  </body>
+</html>

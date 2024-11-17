@@ -1,0 +1,89 @@
+.burger {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 10;
+}
+
+.burger_open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.burger__content {
+  padding-top: 64px;
+  padding-left: 37px;
+  width: 362px;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  overflow-y: auto;
+  transition: transform 0.3s linear;
+  transform: translateX(100%);
+}
+
+.burger_open .burger__content {
+  transform: translateX(0);
+}
+
+.burger__logo-link {
+  margin-bottom: 44px;
+  margin-left: -9px;
+  padding-left: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 130px;
+  height: 39px;
+  border-radius: 100px;
+  border: 1px solid rgb(120, 90, 255);
+  background: rgb(0, 0, 0);
+  letter-spacing: -0.11em;
+  font-size: 42.41px;
+  font-weight: 700;
+  line-height: 39px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgb(120, 90, 255);
+  cursor: pointer;
+}
+
+.burger__nav {
+  margin-bottom: 91px;
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+
+.burger__nav__link {
+  font-size: 25px;
+  line-height: 33px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.burger__contacts-title {
+  margin-bottom: 14px;
+  font-size: 16px;
+  line-height: 21px;
+  opacity: 0.5;
+  color: rgb(255, 255, 255);
+}
+
+.burger__contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.burger__contacts {
+  font-size: 20px;
+  line-height: 45.62ppx;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
